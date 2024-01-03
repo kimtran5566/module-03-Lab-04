@@ -13,7 +13,8 @@ const Timer: React.FC = () => {
 
   useEffect(() => {
     if (seconds === 0) {
-      clearInterval(timerId);
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+      clearInterval(Timer);
       alert("Time's up");
     }
   }, [seconds]);
